@@ -1,0 +1,34 @@
+.app-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* 線條感裝飾 */
+.modern-line {
+    border: 1px solid #333;
+    padding: 40px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.line-deco {
+    width: 50px;
+    height: 2px;
+    background: #000;
+    margin-top: 20px;
+}
+
+/* 主題樣式切換 */
+.sweet-pink {
+    background: #fff0f6;
+    border: 2px dashed #ff85c0;
+    color: #c41d7f;
+}
+
+.dark-gold {
+    background: #1f1f1f;
+    border: 1px solid #d4b106;
+    color: #d4b106;
+}
