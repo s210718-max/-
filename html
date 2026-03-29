@@ -1,0 +1,28 @@
+<div class="app-container">
+    <div class="control-panel">
+        <h3>🎨 定製你的生日卡片</h3>
+        
+        <label>祝福語</label>
+        <input type="text" id="wishInput" placeholder="寫下想說的話..." oninput="updatePreview()">
+        
+        <label>音樂連結 (MP3)</label>
+        <input type="text" id="musicInput" placeholder="https://..." oninput="updatePreview()">
+
+        <label>選擇風格</label>
+        <div class="theme-options">
+            <button onclick="setTheme('modern-line')">極簡線條</button>
+            <button onclick="setTheme('sweet-pink')">浪漫粉紅</button>
+            <button onclick="setTheme('dark-gold')">質感深金</button>
+        </div>
+
+        <button class="generate-btn" onclick="copyFinalUrl()">一鍵複製分享連結</button>
+    </div>
+
+    <div class="preview-area">
+        <p>即時預覽</p>
+        <div id="cardPreview" class="preview-card modern-line">
+            <h1 id="previewText">在此顯示祝福</h1>
+            <div class="line-deco"></div>
+        </div>
+    </div>
+</div>
